@@ -90,7 +90,7 @@ body{
       display: flex;
       flex-direction: column;
       transition: all .5s ease-in-out;
-      transform: translate3d(0, 100%, 0);
+      transform: translate3d(100%, 0, 0);
 
       &.show{
         transform: translate3d(0, 0, 0);
@@ -115,7 +115,7 @@ body{
       align-items: center;
       list-style-type: none;
       transition: all .5s ease-in-out;
-      transform: translate3d(0, -100%, 0);
+      transform: translate3d(-100%, 0, 0);
 
       &.show{
         transform: translate3d(0, 0, 0);
@@ -1097,6 +1097,12 @@ footer{
       .avatar{
         height: 100vh;
         width: 100%;
+        transition: all .5s ease-in-out;
+        transform: translate3d(0, 100%, 0);
+
+        &.show{
+          transform: translate3d(0, 0, 0);
+        }
       }
   
       .nav-menu{
@@ -1106,13 +1112,11 @@ footer{
         height: 100vh;
         width: 50%;
         background-color: rgba(93, 93, 93, 0.95);
-  
-        .nav-links{
-          position: absolute;
-          top: 50%;
-          left: 50%;
-          transform: translate(-50%, -50%);
+        transition: all .5s ease-in-out;
+        transform: translate3d(0, -100%, 0);
 
+        &.show{
+          transform: translate3d(0, 0, 0);
         }
       }
     }

@@ -71,7 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   transition: all 0.5s ease-in-out;
-  transform: translate3d(0, 100%, 0);
+  transform: translate3d(100%, 0, 0);
 }
 .nav-container .full-menu .avatar.show {
   transform: translate3d(0, 0, 0);
@@ -93,7 +93,7 @@ body {
   align-items: center;
   list-style-type: none;
   transition: all 0.5s ease-in-out;
-  transform: translate3d(0, -100%, 0);
+  transform: translate3d(-100%, 0, 0);
 }
 .nav-container .full-menu .nav-menu.show {
   transform: translate3d(0, 0, 0);
@@ -715,6 +715,11 @@ footer a span {
   .nav-container .full-menu .avatar {
     height: 100vh;
     width: 100%;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0, 100%, 0);
+  }
+  .nav-container .full-menu .avatar.show {
+    transform: translate3d(0, 0, 0);
   }
   .nav-container .full-menu .nav-menu {
     position: absolute;
@@ -723,12 +728,11 @@ footer a span {
     height: 100vh;
     width: 50%;
     background-color: rgba(93, 93, 93, 0.95);
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0, -100%, 0);
   }
-  .nav-container .full-menu .nav-menu .nav-links {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  .nav-container .full-menu .nav-menu.show {
+    transform: translate3d(0, 0, 0);
   }
 }
 @media screen and (min-width: 795px) {
