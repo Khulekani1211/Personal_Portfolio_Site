@@ -59,8 +59,10 @@ body {
   width: 100%;
   height: 100%;
   text-align: center;
-  display: none;
-  transform: scale(0);
+  visibility: hidden;
+}
+.nav-container .full-menu.show {
+  visibility: visible;
 }
 .nav-container .full-menu .avatar {
   height: 50vh;
@@ -68,17 +70,6 @@ body {
   background-color: rgba(112, 112, 112, 0.9);
   display: flex;
   flex-direction: column;
-}
-.nav-container .full-menu .avatar .close-menu {
-  position: relative;
-  right: -40%;
-  padding: 1rem;
-  color: #EFEFEF;
-  transition: all ease-in-out 0.4s;
-  cursor: pointer;
-}
-.nav-container .full-menu .avatar .close-menu:hover {
-  color: #000000;
 }
 .nav-container .full-menu .avatar .center-img {
   margin: auto;
@@ -718,7 +709,7 @@ footer a span {
   }
   .nav-container .full-menu .avatar {
     height: 100vh;
-    width: 50%;
+    width: 80vh;
   }
   .nav-container .full-menu .avatar .close-menu {
     position: relative;

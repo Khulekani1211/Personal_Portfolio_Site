@@ -14,19 +14,19 @@ let showMenu = false
 const toggleMenu = () => {
   if(!showMenu){
     menuOpen.classList.add('close')
-    fullMenu.classList.add('close')
-    menuBranding.classList.add('close')
-    menuNav.classList.add('close')
-    navItems.forEach(item => item.classList.add('close'))
+    fullMenu.classList.add('show')
+    menuBranding.classList.add('show')
+    menuNav.classList.add('show')
+    navItems.forEach(item => item.classList.add('show'))
 
     //Change the Menu State
     showMenu = true
   }else{
     menuOpen.classList.remove('close')
-    fullMenu.classList.remove('close')
-    menuBranding.classList.remove('close')
-    menuNav.classList.remove('close')
-    navItems.forEach(item => item.classList.remove('close'))
+    fullMenu.classList.remove('show')
+    menuBranding.classList.remove('show')
+    menuNav.classList.remove('show')
+    navItems.forEach(item => item.classList.remove('show'))
 
     //Change the Menu State
     showMenu = false
