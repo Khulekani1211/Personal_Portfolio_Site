@@ -123,6 +123,28 @@ body{
 
       .nav-item{
         margin-bottom: 1rem;
+        transition: all .5s ease-in-out;
+        transform: translate3d(600px, 0, 0);
+
+        &.show{
+          transform: translate3d(0, 0, 0);
+        }
+
+        &:nth-child(1){
+          transition-delay: .1s;
+        }
+
+        &:nth-child(2){
+          transition-delay: .2s;
+        }
+
+        &:nth-child(3){
+          transition-delay: .3s;
+        }
+
+        &:nth-child(4){
+          transition-delay: .4s;
+        }
 
         a{
           text-decoration: none;
@@ -130,6 +152,7 @@ body{
           font-size: 1.8rem;
           font-weight: 500;
           transition: color ease-in-out .3s;
+          transition: all ease-in-out .5s;
 
           &:hover{
             color: #FFE600;

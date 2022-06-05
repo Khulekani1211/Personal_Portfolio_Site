@@ -100,6 +100,23 @@ body {
 }
 .nav-container .full-menu .nav-menu .nav-item {
   margin-bottom: 1rem;
+  transition: all 0.5s ease-in-out;
+  transform: translate3d(600px, 0, 0);
+}
+.nav-container .full-menu .nav-menu .nav-item.show {
+  transform: translate3d(0, 0, 0);
+}
+.nav-container .full-menu .nav-menu .nav-item:nth-child(1) {
+  transition-delay: 0.1s;
+}
+.nav-container .full-menu .nav-menu .nav-item:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.nav-container .full-menu .nav-menu .nav-item:nth-child(3) {
+  transition-delay: 0.3s;
+}
+.nav-container .full-menu .nav-menu .nav-item:nth-child(4) {
+  transition-delay: 0.4s;
 }
 .nav-container .full-menu .nav-menu .nav-item a {
   text-decoration: none;
@@ -107,6 +124,7 @@ body {
   font-size: 1.8rem;
   font-weight: 500;
   transition: color ease-in-out 0.3s;
+  transition: all ease-in-out 0.5s;
 }
 .nav-container .full-menu .nav-menu .nav-item a:hover {
   color: #FFE600;
