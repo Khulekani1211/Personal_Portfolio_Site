@@ -18,6 +18,7 @@ const toggleMenu = () => {
     menuBranding.classList.add('show')
     menuNav.classList.add('show')
     navItems.forEach(item => item.classList.add('show'))
+    body.style.overflow = 'hidden'
 
     //Change the Menu State
     showMenu = true
@@ -27,13 +28,26 @@ const toggleMenu = () => {
     menuBranding.classList.remove('show')
     menuNav.classList.remove('show')
     navItems.forEach(item => item.classList.remove('show'))
+    body.style.overflow = 'scroll'
 
     //Change the Menu State
     showMenu = false
   }
 }
 
+//-- Disabling Scrolling --//
+const disableScroll = () => {
+  scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  window.onscroll = () => {
+    window.scrollTo(scrollTop)
+  }
+}
+
 menuOpen.addEventListener('click', toggleMenu)
+menuOpen.addEventListener('click', () => {
+  
+})
 
 // Listening to Hamburger Menu
 // menuOpen.addEventListener('click', ()=>{
@@ -54,3 +68,18 @@ const date = new Date();
 const year = date.getFullYear();
 
 copyRight.innerHTML = year;
+
+//-- Handing Page Bookmarks --//
+const exploreBtn = document.getElementById("explore");
+
+exploreBtn.addEventListener('click', (e) => {
+
+  var featureProjects = document.getElementById("projects")
+
+  featureProjects.scrollIntoView({
+    behavior: 'smooth',
+    block: 'start'
+  })
+
+  e.preventDefault();
+})

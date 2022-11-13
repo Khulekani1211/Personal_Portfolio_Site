@@ -12,8 +12,8 @@ body {
 }
 
 .main-container {
-  vertical-align: middle;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 .main-container section {
   background-size: cover;
@@ -27,8 +27,8 @@ body {
   z-index: 10;
 }
 .nav-container .hamburger {
-  position: relative;
-  float: right;
+  position: absolute;
+  right: 2px;
   padding: 1rem;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
@@ -132,10 +132,10 @@ body {
 
 .hero-wrapper {
   position: relative;
-  top: -66px;
+  height: 100%;
   text-align: center;
   background-image: url("../img/showcase.png");
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   z-index: 0;
@@ -146,7 +146,7 @@ body {
   left: 0;
   background-color: rgba(0, 137, 214, 0.75);
   width: 100%;
-  height: inherit;
+  height: 100vh;
   z-index: -2;
 }
 .hero-wrapper .hero-left {
@@ -229,16 +229,15 @@ body {
   display: block;
 }
 .feature-project .feature-header .ellipse {
-  top: -66px;
+  top: -2px;
   position: absolute;
-  width: 120px;
   z-index: -1;
+  width: 200px !important;
 }
 .feature-project .feature-header h1 {
   color: #B80D51;
   font-weight: 900;
   text-align: center;
-  margin-top: -2rem;
 }
 .feature-project h2 {
   margin: 4rem 0 2rem;
@@ -441,7 +440,6 @@ footer a span {
     width: 200px;
     margin: auto;
   }
-
   .feature-project .feature-header .ellipse {
     width: 110px;
   }
@@ -455,7 +453,6 @@ footer a span {
   .feature-project .feature-info .feature-dscription p {
     font-size: 1rem;
   }
-
   .experience .background-header h4 {
     font-size: 1.2rem;
   }
@@ -474,7 +471,6 @@ footer a span {
   .experience .info-cards .card-head h5 {
     font-size: 1.4rem;
   }
-
   .contact-info h1 {
     font-size: 1.6rem;
   }
@@ -490,7 +486,6 @@ footer a span {
   .contact-info .summary-me p {
     font-size: 1rem;
   }
-
   footer {
     font-size: 0.8rem;
   }
@@ -505,18 +500,15 @@ footer a span {
   .hero-wrapper .hero-right h5 {
     font-size: 1.2rem;
   }
-
   .feature-project .feature-header h1 {
     font-size: 2.2rem;
   }
   .feature-project .feature-info .feature-dscription p {
     line-height: 28px;
   }
-
   .experience .background-header h4 {
     font-size: 1.4rem;
   }
-
   .contact-info h1 {
     font-size: 2rem;
     margin-bottom: 3rem;
@@ -527,7 +519,6 @@ footer a span {
   .contact-info .summary-me p {
     line-height: 22px;
   }
-
   footer {
     font-size: 1rem;
   }
@@ -555,11 +546,9 @@ footer a span {
     margin: 0 auto 2rem;
     font-size: 1.2rem;
   }
-
   .experience .background-header h4 {
     font-size: 1.4rem;
   }
-
   .contact-info h1 {
     font-size: 1.8rem;
   }
@@ -573,7 +562,6 @@ footer a span {
     font-size: 1.2rem;
     font-weight: 300;
   }
-
   footer {
     font-size: 1rem;
   }
@@ -593,7 +581,6 @@ footer a span {
     font-size: 1.4rem;
     font-weight: 500;
   }
-
   .feature-project .feature-header .ellipse {
     width: 150px;
   }
@@ -604,15 +591,12 @@ footer a span {
     font-size: 1.4rem;
     font-weight: 400;
   }
-
   .experience .background-header h4 {
     font-size: 1.6rem;
   }
-
   .contact-info h1 {
     font-size: 2rem;
   }
-
   footer {
     font-size: 1.2rem;
   }
@@ -625,7 +609,6 @@ footer a span {
   .feature-project h2 {
     font-size: 1.8rem;
   }
-
   .experience .background-header h4 {
     font-size: 1.6rem;
   }
@@ -641,11 +624,9 @@ footer a span {
   .experience .info-cards .cards {
     width: 240px;
   }
-
   .contact-info h1 {
     font-size: 2.2rem;
   }
-
   footer {
     font-size: 1.4rem;
   }
@@ -665,7 +646,6 @@ footer a span {
     width: 400px;
     margin: 0 auto 2rem;
   }
-
   .feature-project .feature-header .ellipse {
     width: 200px;
   }
@@ -712,15 +692,12 @@ footer a span {
   .feature-project .feature-info .feature-dscription a .eye-icon {
     margin-right: 8px;
   }
-
   .experience .background-header h4 {
     font-size: 1.6rem;
   }
-
   .contact-info h1 {
     font-size: 2rem;
   }
-
   footer {
     font-size: 1.2rem;
   }
@@ -781,7 +758,6 @@ footer a span {
   .experience .info-cards .cards #coding {
     margin-top: 37px;
   }
-
   .contact-info .contacts {
     max-width: 80%;
     display: grid;
@@ -819,7 +795,6 @@ footer a span {
   .feature-project .feature-info .feature-dscription p {
     font-size: 1.2rem;
   }
-
   .experience .background-header {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -835,7 +810,6 @@ footer a span {
   .experience .info-cards .cards {
     width: 240px;
   }
-
   .contact-info h1 {
     font-size: 3rem;
     margin-bottom: 4rem;
@@ -866,7 +840,6 @@ footer a span {
   .hero-wrapper .grid-layout .hero-right h5 {
     font-size: 1.2rem;
   }
-
   .feature-project .feature-header .ellipse {
     width: 240px;
   }
@@ -909,7 +882,6 @@ footer a span {
     width: 440px;
     padding-left: 1rem;
   }
-
   .experience .background-header {
     margin-top: 2rem;
     margin-bottom: 2rem;
@@ -932,7 +904,6 @@ footer a span {
     font-size: 1.6rem;
     width: 500px;
   }
-
   .feature-project .feature-info .feature-dscription p {
     font-size: 1.6rem;
     line-height: 30px;
@@ -980,7 +951,6 @@ footer a span {
     font-size: 1.6rem;
     width: 520px;
   }
-
   .feature-project .feature-info .feature-dscription p {
     font-size: 1.6rem;
     line-height: 30px;
@@ -989,7 +959,6 @@ footer a span {
   .feature-project .feature-info .feature-img img {
     width: 620px;
   }
-
   .experience .background-header {
     margin-top: 3.2rem;
     margin-bottom: 2.4rem;
@@ -1038,7 +1007,6 @@ footer a span {
   .hero-wrapper .grid-layout {
     margin-top: -1rem;
   }
-
   .feature-project .feature-info .feature-img img {
     top: 60px;
   }
@@ -1070,7 +1038,6 @@ footer a span {
   .hero-wrapper .grid-layout {
     margin-top: 2rem;
   }
-
   .feature-project .feature-header h1 {
     margin-top: -3rem;
   }
