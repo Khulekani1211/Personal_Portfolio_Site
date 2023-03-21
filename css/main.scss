@@ -123,7 +123,11 @@ body{
       .nav-item{
         margin-bottom: 1rem;
         transition: all .5s ease-in-out;
-        transform: translate3d(600px, 0, 0);
+        transform: translate3d(850px, 0, 0);
+
+        &.current > a{
+          color: #FFE600;
+        }
 
         &.show{
           transform: translate3d(0, 0, 0);
@@ -336,7 +340,7 @@ body{
       max-width: 92%;
 
       p{
-        margin-bottom: 3rem;
+        margin-bottom: 2rem;
         font-size: .8rem;
         line-height: 20px;
         font-weight: 600;

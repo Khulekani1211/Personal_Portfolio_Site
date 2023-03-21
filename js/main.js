@@ -28,7 +28,7 @@ const toggleMenu = () => {
     menuBranding.classList.remove('show')
     menuNav.classList.remove('show')
     navItems.forEach(item => item.classList.remove('show'))
-    body.style.overflow = 'scroll'
+    body.style.overflowY = 'scroll'
 
     //Change the Menu State
     showMenu = false
