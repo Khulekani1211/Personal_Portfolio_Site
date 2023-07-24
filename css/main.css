@@ -297,7 +297,14 @@ body {
 }
 
 .experience {
-  background-color: #B80D51;
+  position: relative;
+}
+.experience .color-split {
+  position: absolute;
+  z-index: -1;
+  background-color: #005085;
+  height: 100%;
+  width: 100%;
 }
 .experience .background-header {
   width: 95%;
@@ -306,7 +313,7 @@ body {
 }
 .experience .background-header h4 {
   padding: 0.6rem 0;
-  background-color: #D41E66;
+  background-color: #280B6F;
   color: #EFEFEF;
   font-weight: 900;
 }
@@ -322,7 +329,7 @@ body {
   width: 90%;
   margin: 1rem auto;
   border-radius: 15px;
-  background-color: #B927AF;
+  background-color: #007bce;
 }
 .experience .info-cards .cards p {
   font-size: 0.8rem;
@@ -339,13 +346,14 @@ body {
 }
 .experience .info-cards .cards .view-btn a {
   text-decoration: none;
-  color: #C4C4C4;
+  color: #fff;
   font-weight: 600;
 }
 .experience .info-cards .card-head {
   background-color: #ffffff;
   padding: 0.6rem 0;
   border-radius: 15px 15px 0 0;
+  height: 100px;
 }
 .experience .info-cards .card-head .brackets {
   width: 30px;
@@ -504,10 +512,10 @@ footer a span {
     font-size: 1.2rem;
   }
   .feature-project .feature-header h1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .feature-project .feature-info .feature-dscription p {
-    line-height: 28px;
+    line-height: 26px;
   }
   .experience .background-header h4 {
     font-size: 1.4rem;
@@ -542,7 +550,7 @@ footer a span {
     width: 130px;
   }
   .feature-project .feature-header h1 {
-    font-size: 2.6rem;
+    font-size: 2.4rem;
   }
   .feature-project .feature-info .feature-dscription p {
     width: 90%;
@@ -591,7 +599,7 @@ footer a span {
     font-size: 2.8rem;
   }
   .feature-project .feature-info .feature-dscription p {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
     font-weight: 400;
   }
   .experience .background-header h4 {
@@ -732,6 +740,11 @@ footer a span {
   .nav-container .full-menu .nav-menu.show {
     transform: translate3d(0, 0, 0);
   }
+  .experience .background-header {
+    width: 60%;
+    text-align: center;
+    margin: auto;
+  }
 }
 @media screen and (min-width: 795px) {
   .experience .background-header {
@@ -740,6 +753,9 @@ footer a span {
   }
   .experience .background-header h4 {
     font-size: 1.6rem;
+  }
+  .experience .color-split {
+    height: 42.3%;
   }
   .experience .info-cards {
     max-width: 94%;
@@ -917,6 +933,9 @@ footer a span {
   }
 }
 @media screen and (min-width: 1107px) {
+  .experience .color-split {
+    height: 45%;
+  }
   .experience .background-header {
     margin-top: 2.4rem;
     margin-bottom: 2.4rem;
@@ -961,6 +980,9 @@ footer a span {
   }
   .feature-project .feature-info .feature-img img {
     width: 620px;
+  }
+  .experience .color-split {
+    height: 47%;
   }
   .experience .background-header {
     margin-top: 3.2rem;

@@ -370,7 +370,16 @@ body{
 //-- Background and Experience --//
 .experience{
 
-  background-color: #B80D51;
+  //background-color: #B80D51;
+  position: relative;
+
+  .color-split{
+    position: absolute;
+    z-index: -1;
+    background-color: #005085;
+    height: 100%;
+    width: 100%;
+  }
 
   .background-header{
     width: 95%;
@@ -379,7 +388,7 @@ body{
 
     h4{
       padding: .6rem 0;
-      background-color: #D41E66;
+      background-color: #280B6F;
       color: #EFEFEF;
       font-weight: 900;
     }
@@ -397,7 +406,7 @@ body{
       width: 90%;
       margin: 1rem auto;
       border-radius: 15px;
-      background-color: #B927AF;
+      background-color: #007bce;
 
       p{
         font-size: .8rem;
@@ -415,7 +424,7 @@ body{
 
         a{
           text-decoration: none;
-          color: #C4C4C4;
+          color: #fff;
           font-weight: 600;
         }
       }
@@ -425,6 +434,7 @@ body{
       background-color: #ffffff;
       padding: .6rem 0;
       border-radius: 15px 15px 0 0;
+      height: 100px;
 
       .brackets{
         width: 30px;
@@ -695,7 +705,7 @@ footer{
     .feature-header{
   
       h1{
-        font-size: 2.2rem;
+        font-size: 2rem;
       }
   
     }
@@ -704,7 +714,7 @@ footer{
 
       .feature-dscription{
         p{
-          line-height: 28px;
+          line-height: 26px;
         }
       }
     }
@@ -785,7 +795,7 @@ footer{
       }
   
       h1{
-        font-size: 2.6rem;
+        font-size: 2.4rem;
       }
   
     }
@@ -901,7 +911,7 @@ footer{
       .feature-dscription{
         
         p{
-          font-size: 1.4rem;
+          font-size: 1.2rem;
           font-weight: 400;
         }
 
@@ -1148,6 +1158,15 @@ footer{
     }
   
   }
+
+  .experience{
+
+    .background-header{
+      width: 60%;
+      text-align: center;
+      margin: auto;
+    }
+  }
 }
 
 @media screen and (min-width: 795px){
@@ -1160,6 +1179,10 @@ footer{
       h4{
         font-size: 1.6rem;
       }
+    }
+
+    .color-split{
+      height: 42.3%;
     }
 
     .info-cards{
@@ -1534,6 +1557,10 @@ footer{
   //-- Background and Experience --//
   .experience{
 
+    .color-split{
+      height: 45%;
+    }
+
     .background-header{
       margin-top: 2.4rem;
       margin-bottom: 2.4rem;
@@ -1643,6 +1670,10 @@ footer{
   //-- Background and Experience --//
   .experience{
 
+    .color-split{
+      height: 47%;
+    }
+    
     .background-header{
       margin-top: 3.2rem;
       margin-bottom: 2.4rem;

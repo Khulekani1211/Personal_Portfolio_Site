@@ -7,6 +7,7 @@ const menuNav = document.querySelector('.nav-menu')
 const navItems = document.querySelectorAll('.nav-item')
 const body = document.querySelector('body');
 const copyRight = document.getElementById('year');
+const container = document.querySelector('.main-container');
 
 //Set Initial Menu State
 let showMenu = false
@@ -18,9 +19,7 @@ const toggleMenu = () => {
     menuBranding.classList.add('show')
     menuNav.classList.add('show')
     navItems.forEach(item => item.classList.add('show'))
-    
-    body.style.overflow = 'hidden'
-
+    body.style.overflowY = 'hidden'
     //Change the Menu State
     showMenu = true
   }else{
