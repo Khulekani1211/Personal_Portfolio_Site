@@ -45,9 +45,6 @@ const disableScroll = () => {
 }
 
 menuOpen.addEventListener('click', toggleMenu)
-menuOpen.addEventListener('click', () => {
-  
-})
 
 // Listening to Hamburger Menu
 // menuOpen.addEventListener('click', ()=>{
