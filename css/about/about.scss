@@ -50,8 +50,12 @@ body{
 .nav-container{
   position: relative;
   z-index: 10;
+  .logo{
+    z-index: 1;
+  }
   .hamburger{
     position: absolute;
+    top: 0;
     right: 2px;
     padding: 1rem;
     cursor: pointer;
@@ -92,6 +96,7 @@ body{
   //-- Full Menu Section --//
   .full-menu{
     position: absolute;
+    top: 0;
     z-index: 10;
     width: 100%;
     height: 100%;
